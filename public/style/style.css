@@ -1,0 +1,114 @@
+body.index {
+	background-image: url('../image/nyc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 0px;
+}
+
+body.quiz {
+	background-image: url('../image/nyc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+body {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+.row{
+	padding:0;
+	margin: 0;
+}
+#logo {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.logoImg{
+	width: 50%;
+}
+
+/*mobile*/
+@media (min-width: 150px) and (max-width: 899px) {
+	#welcome {
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+		padding-top: 30px;
+	}
+
+	#exp {
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 1em;
+	}
+}
+
+/*desktop*/
+@media (min-width: 900px) {
+	#welcome {
+		font-weight: bold;
+		text-align: center;
+		color: #F1EDE8;	 /*OFFWHITE*/
+;
+		padding-top: 80px;
+		font-size: 60px;
+	}
+
+	#exp {
+		margin-top: -5px;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 1.2em;
+
+	}
+}	
+
+/*buttons*/
+
+#quiz {
+	border: none;
+	color:  #1B578A;	/*DARKBLUE*/
+	background-color: #CCDAE7; /*LIGHTBLUE*/
+	padding: 10px 70px;
+	margin: 15px auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#suprise {
+	border: none;
+	color: #1B578A;	/*DARKBLUE*/
+	background-color: #CCDAE7; /*LIGHTBLUE*/
+	padding: 10px 79px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*results*/
+.cardHeadColor{
+	background-color: #1B578A;	/*DARKBLUE*/
+	color: #F1EDE8;	 /*OFFWHITE*/
+}
+
+.resultMap{
+	max-width: 105%;
+}
+
+.resultCardColor{
+	background-color: #CCDAE7; /*LIGHTBLUE*/
+}
+
+.col-sm-5.card.map {
+    padding-left: 0px;
+}
+
+.about p{
+	text-align: left;
+}
+

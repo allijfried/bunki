@@ -1,0 +1,317 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width; initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700', rel='stylesheet', type='text/css')
+    title Bunki
+    // Bootstrap Core CSS
+    link(href='../style/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='../style/2-col-portfolio.css', rel='stylesheet')
+    // <link rel="stylesheet" type="style/css" href="style/style.css">
+    link(rel='stylesheet', type='style/css', href='../style/style.css')
+  body.quiz
+    // Navigation
+    nav.navbar.navbar-inverse.navbar-fixed-top(class='<!-- -->', role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-left
+          a.navbar-brand(href='#')
+            img.navlogo(src='../image/Logo.png')
+        .navbar-right.progress
+          .progressbar.progress-bar(role='progressbar', aria-valuemin='0', aria-valuemax='3')
+            | 1
+            div
+          // /.container
+    // Page Content
+    .container
+      // Page Header
+      .row
+        .col-lg-12
+          h1.page-header
+            | Find Your Bunki
+            small Quiz
+      // /.row
+      .quizContainer
+        .cardContainer
+          // Quiz Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 Choose Your City
+              p Select the city you wish to live
+              select.form-control.center(name='city')
+                option Austin
+                option Boston
+                option Chicago
+                option Dallas
+                option Houston
+                option Los Angeles
+                option New York City
+                option Philidelphia
+                option San Diego
+            .col-md-offset-2.col-md-5.portfolio-item.card
+              h3 Most Important Attribute of your Neighborhood
+              p Select One
+              .center
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  |  Affordable
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  |  Diverse
+                br
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio3(type='radio', name='inlineRadioOptions', value='option3')
+                  |  Nightlife
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  |  Foodie
+                br
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  |  Spacious
+                label.radio-inline(name='environmentdesc')
+                  input#inlineRadio3(type='radio', name='inlineRadioOptions', value='option3')
+                  |  Shopping
+          // /.row
+          // Projects Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 Do you need public transit?
+              .center
+                label.radio-inline.btn.btn-default(name='public')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Yes
+                label.radio-inline.btn.btn-default(name='public')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | No
+            .col-md-offset-2.col-md-5.portfolio-item.card
+              h3 What is your price range
+              select.form-control.center(name='priceRange')
+                option >700
+                option 700-900
+                option 901-1200
+                option 1201-1500
+                option 1500-2000
+                option 2000+
+          // /.row
+          // Quiz Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 When do you want to move in?
+              .input-group.center
+                span#basic-addon1.input-group-addon(name='date') Month
+                input.form-control(type='month', placeholder='Text input')
+              h3 How long do you want to stay?
+              select.form-control.centerr(name='length')
+                option ≤1
+                option 2
+                option 3
+                option 4
+                option 5
+                option 6
+                option 7
+                option 8
+                option 9
+                option 10
+                option 11
+                option 12+
+            .col-md-offset-2.col-md-5.portfolio-item.card
+              h3 I want to live with
+              select.form-control.center(name='gender')
+                option Male
+                option Female
+                option Doesn't Matter
+              h3 in their
+              label.checkbox-inline(name='ageRange')
+                input#inlineCheckbox1(type='checkbox', value='option1', name='teens')
+                |  >20
+              label.checkbox-inline(name='ageRange')
+                input#inlineCheckbox1(type='checkbox', value='option1', name='20s')
+                |  20s
+              label.checkbox-inline(name='ageRange')
+                input#inlineCheckbox2(type='checkbox', value='option2', name='30s')
+                |  30s
+              label.checkbox-inline(name='ageRange')
+                input#inlineCheckbox3(type='checkbox', value='option3', name='40s')
+                |  40s+
+              label.checkbox-inline(name='ageRange')
+                input#inlineCheckbox3(type='checkbox', value='option3')
+                |  Doesn't Matter
+          // Quiz Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 What is your most important amenity?
+              p Select One
+              .center
+                label.radio-inline(name='amenity')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Gas
+                label.radio-inline(name='amenity')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Heat
+                label.radio-inline(name='amenity')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Air Conditioning
+                br
+                label.radio-inline(name='amenity')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Doorman
+                label.radio-inline(name='amenity')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Elevator
+                label.radio-inline(name='amenity')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Wifi
+                br
+                label.radio-inline(name='amenity')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Furnished
+                label.radio-inline(name='amenity')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Private Bathroom
+            .col-md-offset-2.col-md-5.portfolio-item.card
+              h3 What are your lifesyle choices?
+              .center
+                label.radio-inline(name='lifestyle')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Yes
+                label.radio-inline(name='lifestyle')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | No
+          // Quiz Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 How do you feel about pets?
+              .center
+                label.radio-inline(name='pets')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Bringing My Own
+                label.radio-inline(name='pets')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Don't Like
+                label.radio-inline(name='pets')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Don't mind if bunki has a pet
+                label.radio-inline(name='pets')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | SUPER ALLERGIC
+            .col-md-offset-2.col-md-5.portfolio-item.card
+              h3 What is the furthest you are willing to go to do laundry?
+              select.form-control.center(name='laundry')
+                option In Apt
+                option In Building
+                option Close By
+                option Good Luck!
+          // Quiz Row
+          .row
+            .col-md-5.portfolio-item.card
+              h3 What is your favorite drink?
+              .center
+                label.radio-inline(name='drink')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Bringing My Own
+                label.radio-inline(name='drink')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | Don't Like
+                label.radio-inline(name='drink')
+                  input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                  | Don't mind if bunki has a pet
+                label.radio-inline(name='drink')
+                  input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                  | SUPER ALLERGIC
+          .col-md-offset-2.col-md-5.portfolio-item.card
+            h3 Ideal Celebrity Roomate:
+            .center
+              label.radio-inline(name='celebroomie')
+                input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                | Rachel and Joey (Frieds)
+                // <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+              label.radio-inline(name='celebroomie')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Jess Day and the Boys (New Girl)
+              label.radio-inline(name='celebroomie')
+                input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                | Sheldon and Leonard (Big Bang Theory)
+              label.radio-inline(name='celebroomie')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Bernie and Earnie (Sesame Street)
+              label.radio-inline(name='celebroomie')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Vinny and the Boys (Entourage)
+        // Quiz Row
+        .row
+          .col-md-5.portfolio-item.card
+            h3 Ideal Roomate Activity
+            .center
+              label.radio-inline(name='roomieact')
+                input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                | Cleaning
+              label.radio-inline(name='roomieact')
+                input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                | Movie Night
+              label.radio-inline(name='roomieact')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Throwing a Rager
+              label.radio-inline(name='roomieact')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Clubbing
+              label.radio-inline(name='roomieact')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Being alone in my Room
+              label.radio-inline(name='roomieact')
+                input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                | Chilling with the Roomie
+          .col-md-offset-2.col-md-5.portfolio-item.card
+            h3 Describe Yourself
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox1(type='checkbox', value='option1', name='happy')
+              |  Happy
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox2(type='checkbox', value='option2', name='outgoing')
+              |  Outgoing
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox3(type='checkbox', value='option3', name='shy')
+              |  Shy
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox3(type='checkbox', value='option3', name='nerdy')
+              |  Nerdy
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox1(type='checkbox', value='option1', name='sporty')
+              |  Sporty
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox2(type='checkbox', value='option2', name='controlFreak')
+              |  Control Freak
+            label.checkbox-inline(name='descSelf')
+              input#inlineCheckbox3(type='checkbox', value='option3', name='evilMastermind')
+              |  Evil Mastermind
+        .row
+          .col-sm-12.portfolio-item.connectCard
+            h3 See My Results
+            h4 Connect with:
+            a(href='results.html')
+              img.connectw(src='../image/facebook.png', alt='FacebookLogo')
+            a(href='results.html')
+              img.connectw(src='../image/email.png', alt='FacebookLogo')
+      // Projects Row
+      //
+        <div class="row">
+        <div class="col-md-6 portfolio-item">
+        <a href="#">
+        <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
+        <a href="#">Project Five</a>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="col-md-6 portfolio-item">
+        <a href="#">
+        <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
+        <a href="#">Project Six</a>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        </div>

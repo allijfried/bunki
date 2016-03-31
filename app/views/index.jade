@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width; initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700', rel='stylesheet', type='text/css')
+    title Bunki
+    // Bootstrap Core CSS
+    link(href='style/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='style/2-col-portfolio.css', rel='stylesheet')
+    link(rel='stylesheet', type='style/css', href='style/style.css')
+  body.index
+    .row
+      #logo.col-xs-12.col-sm-4
+        img.logoImg(src='image/Logo.png', alt='Bunki')
+        .col-sm-offset-8
+    .row
+      .col-xs-12.col-md-12.col-lg-12
+        h1#welcome Welcome to Bunki
+        p#exp
+          | WHERE SHOULD I LIVE AND WHO SHOULD I LIVE WITH?
+          br
+          b  TAKE THIS SIMPLE QUIZ TO FIND OUT.
+    .row
+      .col-xs-12.col-md-12.col-lg-12
+        center
+          form(action='quiz', method='get')
+            button#quiz.btn.btn-default(type='submit') take the quiz!
+    .row
+      .col-xs-12.col-md-12.col-lg-12
+        center
+          a(href='html/results.html')
+            button#suprise.btn.btn-default(type='submit') suprise me!
